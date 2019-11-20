@@ -32,8 +32,8 @@ private String email;
   EmpDemo()
   {
     Scanner s = new Scanner(System.in);
-    //Empid = s.nextInt();
-    //name = s.next();
+    Empid = s.nextInt();
+    name = s.next();
     email = s.next();
   }
 
@@ -58,6 +58,8 @@ private String email;
     }
   }
 }
+
+// Custom Exception Class
 class EmailException extends Exception
 {
   EmailException(String s)
